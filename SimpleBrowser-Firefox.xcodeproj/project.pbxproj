@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8443AAB02358CFDB0056F63D /* EmbededWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443AAAF2358CFDB0056F63D /* EmbededWebView.swift */; };
+		8443AAB32358DE050056F63D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8443AAB22358DE050056F63D /* WebKit.framework */; };
+		846267032357769000F17A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846267022357769000F17A0A /* AppDelegate.swift */; };
+		846267052357769000F17A0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846267042357769000F17A0A /* SceneDelegate.swift */; };
+		846267072357769000F17A0A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846267062357769000F17A0A /* SearchViewController.swift */; };
+		8462670A2357769000F17A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846267082357769000F17A0A /* Main.storyboard */; };
+		8462670D2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8462670B2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodeld */; };
+		8462670F235776CB00F17A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8462670E235776CB00F17A0A /* Assets.xcassets */; };
+		84626712235776CB00F17A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84626710235776CB00F17A0A /* LaunchScreen.storyboard */; };
+		8462671D235776CE00F17A0A /* SimpleBrowser_FirefoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462671C235776CE00F17A0A /* SimpleBrowser_FirefoxTests.swift */; };
+		84626728235776CE00F17A0A /* SimpleBrowser_FirefoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84626727235776CE00F17A0A /* SimpleBrowser_FirefoxUITests.swift */; };
+		8462674123577BBB00F17A0A /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462674023577BBB00F17A0A /* SearchInteractor.swift */; };
+		8462674423577BDC00F17A0A /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462674323577BDC00F17A0A /* SearchPresenter.swift */; };
+		8462674923577C4A00F17A0A /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462674823577C4A00F17A0A /* SearchService.swift */; };
+		8462674B23577C6D00F17A0A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462674A23577C6D00F17A0A /* NetworkManager.swift */; };
+		846267522358A54900F17A0A /* SearchInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846267512358A54900F17A0A /* SearchInterfaces.swift */; };
+		846267542358A5D300F17A0A /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846267532358A5D300F17A0A /* SearchViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84626719235776CE00F17A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 846266F72357768F00F17A0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 846266FE2357769000F17A0A;
+			remoteInfo = "SimpleBrowser-Firefox";
+		};
+		84626724235776CE00F17A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 846266F72357768F00F17A0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 846266FE2357769000F17A0A;
+			remoteInfo = "SimpleBrowser-Firefox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8443AAAF2358CFDB0056F63D /* EmbededWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbededWebView.swift; sourceTree = "<group>"; };
+		8443AAB22358DE050056F63D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		846266FF2357769000F17A0A /* SimpleBrowser-Firefox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleBrowser-Firefox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		846267022357769000F17A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846267042357769000F17A0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		846267062357769000F17A0A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		846267092357769000F17A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8462670C2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleBrowser_Firefox.xcdatamodel; sourceTree = "<group>"; };
+		8462670E235776CB00F17A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84626711235776CB00F17A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84626713235776CB00F17A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84626718235776CE00F17A0A /* SimpleBrowser-FirefoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleBrowser-FirefoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8462671C235776CE00F17A0A /* SimpleBrowser_FirefoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBrowser_FirefoxTests.swift; sourceTree = "<group>"; };
+		8462671E235776CE00F17A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84626723235776CE00F17A0A /* SimpleBrowser-FirefoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleBrowser-FirefoxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84626727235776CE00F17A0A /* SimpleBrowser_FirefoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBrowser_FirefoxUITests.swift; sourceTree = "<group>"; };
+		84626729235776CE00F17A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8462674023577BBB00F17A0A /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		8462674323577BDC00F17A0A /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		8462674823577C4A00F17A0A /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		8462674A23577C6D00F17A0A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		846267512358A54900F17A0A /* SearchInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInterfaces.swift; sourceTree = "<group>"; };
+		846267532358A5D300F17A0A /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846266FC2357769000F17A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8443AAB32358DE050056F63D /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84626715235776CE00F17A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84626720235776CE00F17A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8443AAB12358DE050056F63D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8443AAB22358DE050056F63D /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		846266F62357768F00F17A0A = {
+			isa = PBXGroup;
+			children = (
+				846267012357769000F17A0A /* SimpleBrowser-Firefox */,
+				8462671B235776CE00F17A0A /* SimpleBrowser-FirefoxTests */,
+				84626726235776CE00F17A0A /* SimpleBrowser-FirefoxUITests */,
+				846267002357769000F17A0A /* Products */,
+				8443AAB12358DE050056F63D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		846267002357769000F17A0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846266FF2357769000F17A0A /* SimpleBrowser-Firefox.app */,
+				84626718235776CE00F17A0A /* SimpleBrowser-FirefoxTests.xctest */,
+				84626723235776CE00F17A0A /* SimpleBrowser-FirefoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846267012357769000F17A0A /* SimpleBrowser-Firefox */ = {
+			isa = PBXGroup;
+			children = (
+				8462673523577AC500F17A0A /* Search Class */,
+				8462673623577AD000F17A0A /* Service */,
+				8462673723577AD700F17A0A /* Networking */,
+				8462673A23577AF400F17A0A /* App-UI */,
+				846267022357769000F17A0A /* AppDelegate.swift */,
+				846267042357769000F17A0A /* SceneDelegate.swift */,
+				8462670E235776CB00F17A0A /* Assets.xcassets */,
+				84626713235776CB00F17A0A /* Info.plist */,
+				8462670B2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodeld */,
+			);
+			path = "SimpleBrowser-Firefox";
+			sourceTree = "<group>";
+		};
+		8462671B235776CE00F17A0A /* SimpleBrowser-FirefoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				8462671C235776CE00F17A0A /* SimpleBrowser_FirefoxTests.swift */,
+				8462671E235776CE00F17A0A /* Info.plist */,
+			);
+			path = "SimpleBrowser-FirefoxTests";
+			sourceTree = "<group>";
+		};
+		84626726235776CE00F17A0A /* SimpleBrowser-FirefoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84626727235776CE00F17A0A /* SimpleBrowser_FirefoxUITests.swift */,
+				84626729235776CE00F17A0A /* Info.plist */,
+			);
+			path = "SimpleBrowser-FirefoxUITests";
+			sourceTree = "<group>";
+		};
+		8462673523577AC500F17A0A /* Search Class */ = {
+			isa = PBXGroup;
+			children = (
+				8462674223577BC200F17A0A /* View */,
+				8462674523577BE500F17A0A /* EmbededWebView */,
+				8462674023577BBB00F17A0A /* SearchInteractor.swift */,
+				8462674323577BDC00F17A0A /* SearchPresenter.swift */,
+			);
+			path = "Search Class";
+			sourceTree = "<group>";
+		};
+		8462673623577AD000F17A0A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8462674823577C4A00F17A0A /* SearchService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8462673723577AD700F17A0A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8462674A23577C6D00F17A0A /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8462673A23577AF400F17A0A /* App-UI */ = {
+			isa = PBXGroup;
+			children = (
+				84626710235776CB00F17A0A /* LaunchScreen.storyboard */,
+				846267082357769000F17A0A /* Main.storyboard */,
+			);
+			path = "App-UI";
+			sourceTree = "<group>";
+		};
+		8462674223577BC200F17A0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				846267502358A52700F17A0A /* Common */,
+				846267062357769000F17A0A /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8462674523577BE500F17A0A /* EmbededWebView */ = {
+			isa = PBXGroup;
+			children = (
+				8443AAAF2358CFDB0056F63D /* EmbededWebView.swift */,
+			);
+			path = EmbededWebView;
+			sourceTree = "<group>";
+		};
+		846267502358A52700F17A0A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				846267512358A54900F17A0A /* SearchInterfaces.swift */,
+				846267532358A5D300F17A0A /* SearchViewModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846266FE2357769000F17A0A /* SimpleBrowser-Firefox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8462672C235776CE00F17A0A /* Build configuration list for PBXNativeTarget "SimpleBrowser-Firefox" */;
+			buildPhases = (
+				846266FB2357769000F17A0A /* Sources */,
+				846266FC2357769000F17A0A /* Frameworks */,
+				846266FD2357769000F17A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleBrowser-Firefox";
+			productName = "SimpleBrowser-Firefox";
+			productReference = 846266FF2357769000F17A0A /* SimpleBrowser-Firefox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84626717235776CE00F17A0A /* SimpleBrowser-FirefoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8462672F235776CE00F17A0A /* Build configuration list for PBXNativeTarget "SimpleBrowser-FirefoxTests" */;
+			buildPhases = (
+				84626714235776CE00F17A0A /* Sources */,
+				84626715235776CE00F17A0A /* Frameworks */,
+				84626716235776CE00F17A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8462671A235776CE00F17A0A /* PBXTargetDependency */,
+			);
+			name = "SimpleBrowser-FirefoxTests";
+			productName = "SimpleBrowser-FirefoxTests";
+			productReference = 84626718235776CE00F17A0A /* SimpleBrowser-FirefoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84626722235776CE00F17A0A /* SimpleBrowser-FirefoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84626732235776CE00F17A0A /* Build configuration list for PBXNativeTarget "SimpleBrowser-FirefoxUITests" */;
+			buildPhases = (
+				8462671F235776CE00F17A0A /* Sources */,
+				84626720235776CE00F17A0A /* Frameworks */,
+				84626721235776CE00F17A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84626725235776CE00F17A0A /* PBXTargetDependency */,
+			);
+			name = "SimpleBrowser-FirefoxUITests";
+			productName = "SimpleBrowser-FirefoxUITests";
+			productReference = 84626723235776CE00F17A0A /* SimpleBrowser-FirefoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846266F72357768F00F17A0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Keyur Sosa";
+				TargetAttributes = {
+					846266FE2357769000F17A0A = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					84626717235776CE00F17A0A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 846266FE2357769000F17A0A;
+					};
+					84626722235776CE00F17A0A = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 846266FE2357769000F17A0A;
+					};
+				};
+			};
+			buildConfigurationList = 846266FA2357768F00F17A0A /* Build configuration list for PBXProject "SimpleBrowser-Firefox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 846266F62357768F00F17A0A;
+			productRefGroup = 846267002357769000F17A0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846266FE2357769000F17A0A /* SimpleBrowser-Firefox */,
+				84626717235776CE00F17A0A /* SimpleBrowser-FirefoxTests */,
+				84626722235776CE00F17A0A /* SimpleBrowser-FirefoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846266FD2357769000F17A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84626712235776CB00F17A0A /* LaunchScreen.storyboard in Resources */,
+				8462670F235776CB00F17A0A /* Assets.xcassets in Resources */,
+				8462670A2357769000F17A0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84626716235776CE00F17A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84626721235776CE00F17A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846266FB2357769000F17A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846267072357769000F17A0A /* SearchViewController.swift in Sources */,
+				846267032357769000F17A0A /* AppDelegate.swift in Sources */,
+				8462674B23577C6D00F17A0A /* NetworkManager.swift in Sources */,
+				8462670D2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodeld in Sources */,
+				846267052357769000F17A0A /* SceneDelegate.swift in Sources */,
+				8462674923577C4A00F17A0A /* SearchService.swift in Sources */,
+				846267542358A5D300F17A0A /* SearchViewModel.swift in Sources */,
+				8462674423577BDC00F17A0A /* SearchPresenter.swift in Sources */,
+				8443AAB02358CFDB0056F63D /* EmbededWebView.swift in Sources */,
+				846267522358A54900F17A0A /* SearchInterfaces.swift in Sources */,
+				8462674123577BBB00F17A0A /* SearchInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84626714235776CE00F17A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8462671D235776CE00F17A0A /* SimpleBrowser_FirefoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8462671F235776CE00F17A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84626728235776CE00F17A0A /* SimpleBrowser_FirefoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8462671A235776CE00F17A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 846266FE2357769000F17A0A /* SimpleBrowser-Firefox */;
+			targetProxy = 84626719235776CE00F17A0A /* PBXContainerItemProxy */;
+		};
+		84626725235776CE00F17A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 846266FE2357769000F17A0A /* SimpleBrowser-Firefox */;
+			targetProxy = 84626724235776CE00F17A0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		846267082357769000F17A0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846267092357769000F17A0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84626710235776CB00F17A0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84626711235776CB00F17A0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8462672A235776CE00F17A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8462672B235776CE00F17A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8462672D235776CE00F17A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZX3PLTFRE;
+				INFOPLIST_FILE = "SimpleBrowser-Firefox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyur-Sosa.SimpleBrowser-Firefox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8462672E235776CE00F17A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZX3PLTFRE;
+				INFOPLIST_FILE = "SimpleBrowser-Firefox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyur-Sosa.SimpleBrowser-Firefox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84626730235776CE00F17A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZX3PLTFRE;
+				INFOPLIST_FILE = "SimpleBrowser-FirefoxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyur-Sosa.SimpleBrowser-FirefoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBrowser-Firefox.app/SimpleBrowser-Firefox";
+			};
+			name = Debug;
+		};
+		84626731235776CE00F17A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZX3PLTFRE;
+				INFOPLIST_FILE = "SimpleBrowser-FirefoxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyur-Sosa.SimpleBrowser-FirefoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBrowser-Firefox.app/SimpleBrowser-Firefox";
+			};
+			name = Release;
+		};
+		84626733235776CE00F17A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZX3PLTFRE;
+				INFOPLIST_FILE = "SimpleBrowser-FirefoxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyur-Sosa.SimpleBrowser-FirefoxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SimpleBrowser-Firefox";
+			};
+			name = Debug;
+		};
+		84626734235776CE00F17A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZX3PLTFRE;
+				INFOPLIST_FILE = "SimpleBrowser-FirefoxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyur-Sosa.SimpleBrowser-FirefoxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SimpleBrowser-Firefox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846266FA2357768F00F17A0A /* Build configuration list for PBXProject "SimpleBrowser-Firefox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8462672A235776CE00F17A0A /* Debug */,
+				8462672B235776CE00F17A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8462672C235776CE00F17A0A /* Build configuration list for PBXNativeTarget "SimpleBrowser-Firefox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8462672D235776CE00F17A0A /* Debug */,
+				8462672E235776CE00F17A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8462672F235776CE00F17A0A /* Build configuration list for PBXNativeTarget "SimpleBrowser-FirefoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84626730235776CE00F17A0A /* Debug */,
+				84626731235776CE00F17A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84626732235776CE00F17A0A /* Build configuration list for PBXNativeTarget "SimpleBrowser-FirefoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84626733235776CE00F17A0A /* Debug */,
+				84626734235776CE00F17A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8462670B2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8462670C2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodel */,
+			);
+			currentVersion = 8462670C2357769000F17A0A /* SimpleBrowser_Firefox.xcdatamodel */;
+			path = SimpleBrowser_Firefox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 846266F72357768F00F17A0A /* Project object */;
+}
